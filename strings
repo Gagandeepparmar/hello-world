@@ -1,0 +1,10 @@
+thing = "house"
+house = "big one"
+if thing == "house":
+    if house == "big one":
+        print "this is lovely and big house"
+    else:
+        print "this is lovely and sweet house"
+else:
+    print "this is not a house"
+ 
