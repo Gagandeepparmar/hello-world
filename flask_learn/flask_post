@@ -1,0 +1,14 @@
+from flask import request, url_for
+from flask.ext.api import FlaskAPI, status, exceptions
+
+app = FlaskAPI(__name__)
+
+@app.route('/hello/', methods=['POST'])
+def hello():
+    name=request.form['yourname']
+    email=request.form['youremail']
+    return render_template('form_action.html', name=name, email=email)
+
+# Run the app :)
+if __name__ == '__main__':
+    app.run(debug=True)
