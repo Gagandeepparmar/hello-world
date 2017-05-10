@@ -1,0 +1,13 @@
+def cart(**items):
+    print items
+
+cart(apples=4, peaches=6, beef=60)
+
+
+def profile(first,lastname,*ages,**items):
+    print first
+    print lastname
+    print ages
+    print items 
+
+profile("gagan","deep",23,45,67,89,gagan="girl",harvinder="boy")
